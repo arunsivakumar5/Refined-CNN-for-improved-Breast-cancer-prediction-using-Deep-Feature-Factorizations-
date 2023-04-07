@@ -111,14 +111,14 @@ Accuracy was 35% on the testing data. The refined 2D CNN gave precision and reca
 composed of equal number of samples from each class.Finally, we test the model and report their
 performance on the original proportion of classes present in the testset. This is done to test how
 the model performs when the examples are provided as it occurs in the wild, with
-Out-Of-Distribution proportions in table 1.
+Out-Of-Distribution proportions.
 ## B. Classifying outcome from image features.
 When classifying the outcome of neoadjuvant therapy using 3 components of image features,
 Random Forest slightly outperformed SVM. The Random Forest had the following
 hyperparameters, number of estimators = 10, minimum samples split = 5, minimum samples leaf
 = 20, max depth =19, and bootstrap = True. For SVM the following were C = 5, kernel was
 radial with gamma of 1.
-Table 1 shows us that Refined 2D CNN has the highest precision across all models; Although
+Our results shows us that Refined 2D CNN has the highest precision across all models; Although
 SVM and Random Forest classifier had a recall of 100% they predicted that no patients will
 show response to neoadjuvant therapy implying that SVM and Random Forest are overfitting to
 the majority class and cannot predict the minority class well, more details attached in appendix
