@@ -1,7 +1,7 @@
 # Refined CNN for improved Breast cancer prediction using Deep Feature Factorizations
 Causal inference for predicting treatment outcome in breast cancer using Explainable AI
 
-## Introduction
+# Introduction
 Neoadjuvant therapy (NAT) is an early treatment option for breast cancer, which aims to reduce
 tumor burden and enable patients to undergo breast-conserving surgery instead of mastectomy.
 While some patients achieve complete recovery, others experience incomplete recovery.
@@ -12,21 +12,21 @@ features for predicting neoadjuvant response but these studies do not use images
 establish causal inference. In our paper, we identify causal relationships between images and
 pathology labels using a Novel refined CNN approach to learn causation from the raw images
 themselves.
-## Dataset:
+# Dataset:
 The study included a group of patients, and prior to treatment, each patient's dynamic
 contrast-enhanced MR (DCE-MR) images were obtained. There were 64 patients with complete
 response to neoadjuvant therapy and 224 with no response to neoadjuvant therapy.
-## Methodology: 
+# Methodology: 
 In order to classify the outcome of neo adjuvant therapy we implemented 4
 methods:
-# Classifying from MRI images:
-# Implemented 3D CNN on volumetric MRI images of each patient:
+## Classifying from MRI images:
+## Implemented 3D CNN on volumetric MRI images of each patient:
 The original DICOM images were used to train the 3D CNN model. A pretrained
 ResNet10 from MONAI was used with MedicalNet weights and these weights come from
 training on 23 different medical datasets. The authors of [1] claim that pretraining on
 medical datasets makes the model converge faster and so we utilize these weights for our
 experiments.
-# Implemented 2D CNN on the middle slice of annotated images for each patient:
+## Implemented 2D CNN on the middle slice of annotated images for each patient:
 Using the annotation information, the MRI images were cropped in x, and y and z
 dimensions. The middle slice of the annotations was selected to represent each patient in
 training. We carry out data augmentation on the images that are separated out for training
@@ -44,7 +44,7 @@ CNN and we addressed this using a Novel Refined CNN algorithm that estimates gro
 truth and learns these pixels to predict if a patient will not recover after neoadjuvant
 therapy.We will discuss and provide details on our inspiration for this method in the next
 section.
-# Implemented refined 2D CNN on the middle slice of each patient using GradCAM(proposed method):
+## Implemented refined 2D CNN on the middle slice of each patient using GradCAM(proposed method):
 Deep matrix factorization. Deep matrix factorization is the method by which we can
 quantify a model’s reasoning. This method first introduced by [6] involves carrying out
 Principal Component Analysis on deep features extracted from the final convolution
@@ -89,7 +89,7 @@ component with higher percentage of correct label (red region) is considered as
 estimated ground truth. In the next phase, we give higher weights to estimated ground
 truth regions and learn the pixels in those regions in the form of higher weights in the loss
 function with a newly initialized CNN model.
-# B. Classifying from image features.
+## B. Classifying from image features.
 There were 529 computer-extracted imaging features representing a variety of
 imaging characteristics including size, shape, texture, and enhancement of both the tumor
 and the surrounding tissue. The missing values were replaced by mean. The problem with
@@ -99,8 +99,8 @@ Analysis. Principal Component Analysis (PCA) is a statistical technique that is 
 reduce the dimensionality of large datasets. 3 components explained 99.6% of variability
 in the image features. The outcome of NeoAdjuvant therapy was classified using the
 SVM and Random Forest.
-## Results:
-# A: Classifying outcome from MRI images
+# Results:
+## A: Classifying outcome from MRI images
 The 2D ResNet50 CNN model gave the precision of 100%, however, Recall was only 15%, and
 Accuracy was 35% on the testing data. The refined 2D CNN gave precision and recall of
 77.42% and 92.31% respectively.we save the model according to performance on a validation set
@@ -108,7 +108,7 @@ composed of equal number of samples from each class.Finally, we test the model a
 performance on the original proportion of classes present in the testset. This is done to test how
 the model performs when the examples are provided as it occurs in the wild, with
 Out-Of-Distribution proportions in table 1.
-# B. Classifying outcome from image features.
+## B. Classifying outcome from image features.
 When classifying the outcome of neoadjuvant therapy using 3 components of image features,
 Random Forest slightly outperformed SVM. The Random Forest had the following
 hyperparameters, number of estimators = 10, minimum samples split = 5, minimum samples leaf
