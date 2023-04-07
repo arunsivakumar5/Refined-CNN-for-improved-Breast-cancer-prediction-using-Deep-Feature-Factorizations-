@@ -81,6 +81,7 @@ percentage of the correct label and consider these pixels as estimated ground
 truth. We train the second model on these instances, with the weight mask on top
 of the image, so that higher weights are given to the loss that comes from the
 estimated ground truth regions in the cross entropy loss function.
+
 In figure 3, we illustrate our method and show how giving higher weights to the
 correct regions makes our novel refined CNN model learn these estimated ground truth
 regions better than baseline CNN.
