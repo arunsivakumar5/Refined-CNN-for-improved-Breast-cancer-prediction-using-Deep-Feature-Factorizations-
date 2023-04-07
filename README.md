@@ -16,9 +16,9 @@ themselves.
 The study included a group of patients, and prior to treatment, each patient's dynamic
 contrast-enhanced MR (DCE-MR) images were obtained. There were 64 patients with complete
 response to neoadjuvant therapy and 224 with no response to neoadjuvant therapy.
-Methodology: In order to classify the outcome of neo adjuvant therapy we implemented 4
+## Methodology: In order to classify the outcome of neo adjuvant therapy we implemented 4
 methods:
-# Classifying from MRI images:
+## Classifying from MRI images:
 ## Implemented 3D CNN on volumetric MRI images of each patient:
 The original DICOM images were used to train the 3D CNN model. A pretrained
 ResNet10 from MONAI was used with MedicalNet weights and these weights come from
