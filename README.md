@@ -68,6 +68,7 @@ are correctly classified, we train a new second model on these images and for th
 misclassified instances,we carry out our refinement routine. 
 
 Our refinement routine involves, two steps:
+
 ● In step1, we estimate ground truth regions using deep matrix factorization.
 Deep matrix factorization involves carrying out PCA on the extracted CNN
 features and we set K =2, as we are carrying out binary classification. From the
