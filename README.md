@@ -65,9 +65,9 @@ model predict cancer using the correct regions.
 In our Novel method, We train two models, one model which is trained using all the
 images and we predict on the same images using this initial model. For the instances that
 are correctly classified, we train a new second model on these images and for the
-misclassified instances,we carry out our refinement routine. Our refinement routine
-involves, two steps:
+misclassified instances,we carry out our refinement routine. 
 
+Our refinement routine involves, two steps:
 ● In step1, we estimate ground truth regions using deep matrix factorization.
 Deep matrix factorization involves carrying out PCA on the extracted CNN
 features and we set K =2, as we are carrying out binary classification. From the
