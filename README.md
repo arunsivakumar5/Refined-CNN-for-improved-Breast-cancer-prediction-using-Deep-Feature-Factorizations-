@@ -125,21 +125,21 @@ the majority class and cannot predict the minority class well, more details atta
 A. Compared to 2D CNN’s our method refined 2D CNN’s has higher accuracy as we learn to
 differentiate both classes better.
 ## References:
-S. Chen, K. Ma, and Y. Zheng, "Med3D: Transfer Learning for 3D Medical Image Analysis," in IEEE Transactions on Medical Imaging, vol. 38, no. 6, pp. 1538-1548, June 2019, doi: 10.1109/TMI.2019.2901476.
+[1] S. Chen, K. Ma, and Y. Zheng, "Med3D: Transfer Learning for 3D Medical Image Analysis," in IEEE Transactions on Medical Imaging, vol. 38, no. 6, pp. 1538-1548, June 2019, doi: 10.1109/TMI.2019.2901476.
 
-S. A. Hossain et al., "Breast Cancer Diagnosis Using Deep Convolutional Neural Networks and Support Vector Machines," in IEEE Access, vol. 7, pp. 17976-17985, 2019, doi: 10.1109/ACCESS.2019.2891163.
+[2] S. A. Hossain et al., "Breast Cancer Diagnosis Using Deep Convolutional Neural Networks and Support Vector Machines," in IEEE Access, vol. 7, pp. 17976-17985, 2019, doi: 10.1109/ACCESS.2019.2891163.
 
-N. F. F. Ibrahim et al., "Deep Learning for Breast Cancer Diagnosis Using Mammography Images: A Review," in IEEE Access, vol. 9, pp. 23728-23744, 2021, doi: 10.1109/ACCESS.2021.3050492.
+[3] N. F. F. Ibrahim et al., "Deep Learning for Breast Cancer Diagnosis Using Mammography Images: A Review," in IEEE Access, vol. 9, pp. 23728-23744, 2021, doi: 10.1109/ACCESS.2021.3050492.
 
-M. A. Salah et al., "Breast Cancer Classification from Histopathological Images with Inception Convolutional Neural Networks," in IEEE Access, vol. 8, pp. 155191-155202, 2020, doi: 10.1109/ACCESS.2020.3017387.
+[4] M. A. Salah et al., "Breast Cancer Classification from Histopathological Images with Inception Convolutional Neural Networks," in IEEE Access, vol. 8, pp. 155191-155202, 2020, doi: 10.1109/ACCESS.2020.3017387.
 
-Bae, S., Yoo, C., Choi, Y., Kim, S., & Lee, K. (2019). Multiclass classification of breast cancer histology images using convolutional neural networks. IEEE Access, 7, 174420-174431. doi: 10.1109/ACCESS.2019.2956152
+[5] Bae, S., Yoo, C., Choi, Y., Kim, S., & Lee, K. (2019). Multiclass classification of breast cancer histology images using convolutional neural networks. IEEE Access, 7, 174420-174431. doi: 10.1109/ACCESS.2019.2956152
 
-Selvaraju, R. R., Cogswell, M., Das, A., Vedantam, R., Parikh, D., & Batra, D. (2017). Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization. In Proceedings of the IEEE International Conference on Computer Vision (ICCV) (pp. 618-626). https://doi.org/10.1109/ICCV.2017.74
+[6] Selvaraju, R. R., Cogswell, M., Das, A., Vedantam, R., Parikh, D., & Batra, D. (2017). Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization. In Proceedings of the IEEE International Conference on Computer Vision (ICCV) (pp. 618-626). https://doi.org/10.1109/ICCV.2017.74
 
-Patel, K., & Varshney, K. R. (2021). Deep matrix factorizations for ground truth estimation from CNN features. arXiv preprint arXiv:2105.10734.
-S. Shakya, M. Vasquez, Y. Wang, R. Tchoua, J. Furst, and D. Raicu, "Human-in-the-loop deep learning retinal image classification with customized loss function," in IEEE International Conference on Image Processing (ICIP), Abu Dhabi, United Arab Emirates, Oct. 2021, pp. 3901-3905, doi: 10.1109/ICIP42928.2021.9506785.
+[7] Patel, K., & Varshney, K. R. (2021). Deep matrix factorizations for ground truth estimation from CNN features. arXiv preprint arXiv:2105.10734.
+[8] S. Shakya, M. Vasquez, Y. Wang, R. Tchoua, J. Furst, and D. Raicu, "Human-in-the-loop deep learning retinal image classification with customized loss function," in IEEE International Conference on Image Processing (ICIP), Abu Dhabi, United Arab Emirates, Oct. 2021, pp. 3901-3905, doi: 10.1109/ICIP42928.2021.9506785.
 
-Gil, J. (2017). PyTorch implementation of Grad-CAM. GitHub repository. https://github.com/jacobgil/pytorch-grad-cam.
+[9] Gil, J. (2017). PyTorch implementation of Grad-CAM. GitHub repository. https://github.com/jacobgil/pytorch-grad-cam.
 
-A. Bahl, E. Ojeda-Fournier, and S. S. McDonald, "Multivariate Machine Learning Models for Prediction of Pathologic Response to Neoadjuvant Therapy in Breast Cancer using MRI features: A Study Using an Independent Validation Set," in IEEE Journal of Biomedical and Health Informatics, vol. 23, no. 1, pp. 297-305, Jan. 2019, doi: 10.1109/JBHI.2018.2832193.
+[10] A. Bahl, E. Ojeda-Fournier, and S. S. McDonald, "Multivariate Machine Learning Models for Prediction of Pathologic Response to Neoadjuvant Therapy in Breast Cancer using MRI features: A Study Using an Independent Validation Set," in IEEE Journal of Biomedical and Health Informatics, vol. 23, no. 1, pp. 297-305, Jan. 2019, doi: 10.1109/JBHI.2018.2832193.
