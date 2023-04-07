@@ -66,13 +66,15 @@ In our Novel method, We train two models, one model which is trained using all t
 images and we predict on the same images using this initial model. For the instances that
 are correctly classified, we train a new second model on these images and for the
 misclassified instances,we carry out our refinement routine. Our refinement routine
-involves, two steps
+involves, two steps:
+
 ● In step1, we estimate ground truth regions using deep matrix factorization.
 Deep matrix factorization involves carrying out PCA on the extracted CNN
 features and we set K =2, as we are carrying out binary classification. From the
 components received from PCA, we can break down the components based on the
 percentage of label present in each component and overlay the matrix on top of
 the image to see which pixels are present in each component.
+
 ● Now,in step 2 we give higher weights to the components which have a higher
 percentage of the correct label and consider these pixels as estimated ground
 truth. We train the second model on these instances, with the weight mask on top
