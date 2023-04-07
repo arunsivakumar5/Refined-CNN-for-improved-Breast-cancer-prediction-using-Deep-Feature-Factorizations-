@@ -19,14 +19,14 @@ response to neoadjuvant therapy and 224 with no response to neoadjuvant therapy.
 # Methodology: 
 In order to classify the outcome of neo adjuvant therapy we implemented 4
 methods:
-## Classifying from MRI images:
-## Implemented 3D CNN on volumetric MRI images of each patient:
+## A. Classifying from MRI images:
+### Implemented 3D CNN on volumetric MRI images of each patient:
 The original DICOM images were used to train the 3D CNN model. A pretrained
 ResNet10 from MONAI was used with MedicalNet weights and these weights come from
 training on 23 different medical datasets. The authors of [1] claim that pretraining on
 medical datasets makes the model converge faster and so we utilize these weights for our
 experiments.
-## Implemented 2D CNN on the middle slice of annotated images for each patient:
+### Implemented 2D CNN on the middle slice of annotated images for each patient:
 Using the annotation information, the MRI images were cropped in x, and y and z
 dimensions. The middle slice of the annotations was selected to represent each patient in
 training. We carry out data augmentation on the images that are separated out for training
@@ -44,7 +44,7 @@ CNN and we addressed this using a Novel Refined CNN algorithm that estimates gro
 truth and learns these pixels to predict if a patient will not recover after neoadjuvant
 therapy.We will discuss and provide details on our inspiration for this method in the next
 section.
-## Implemented refined 2D CNN on the middle slice of each patient using GradCAM(proposed method):
+### Implemented refined 2D CNN on the middle slice of each patient using GradCAM(proposed method):
 Deep matrix factorization. Deep matrix factorization is the method by which we can
 quantify a model’s reasoning. This method first introduced by [6] involves carrying out
 Principal Component Analysis on deep features extracted from the final convolution
