@@ -43,8 +43,7 @@ CNN and we addressed this using a Novel Refined CNN algorithm that estimates gro
 truth and learns these pixels to predict if a patient will not recover after neoadjuvant
 therapy.We will discuss and provide details on our inspiration for this method in the next
 section.
-## Implemented refined 2D CNN on the middle slice of each patient using
-## GradCAM(proposed method):
+## Implemented refined 2D CNN on the middle slice of each patient using GradCAM(proposed method):
 Deep matrix factorization. Deep matrix factorization is the method by which we can
 quantify a model’s reasoning. This method first introduced by [6] involves carrying out
 Principal Component Analysis on deep features extracted from the final convolution
